@@ -1,0 +1,93 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/manifest": [
+                        {
+                            "xml": "<uses-feature android:name=\"android.hardware.touchscreen\" android:required=\"false\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-feature android:name=\"android.hardware.camera\" android:required=\"false\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-feature android:name=\"android.hardware.camera.autofocus\" android:required=\"false\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-feature android:name=\"android.hardware.microphone\" android:required=\"false\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-feature android:name=\"android.hardware.wifi\" android:required=\"false\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-feature android:name=\"android.hardware.bluetooth\" android:required=\"false\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-feature android:name=\"android.hardware.location\" android:required=\"false\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-feature android:name=\"android.hardware.location.gps\" android:required=\"false\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-feature android:name=\"android.hardware.location.network\" android:required=\"false\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-feature android:name=\"android.hardware.telephony\" android:required=\"false\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application/activity/intent-filter": [
+                        {
+                            "xml": "<category android:name=\"android.intent.category.DEFAULT\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<category android:name=\"android.intent.category.LAUNCHER\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<category android:name=\"tv.ouya.intent.category.GAME\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<category android:name=\"android.intent.category.LEANBACK_LAUNCHER\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Gamepad\"><param name=\"android-package\" value=\"com.judax.cordova.plugin.gamepad.CordovaPluginGamepad\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.hughisaacs2.cordova.plugins.androidtvplugin": {
+            "PACKAGE_NAME": "com.example.hello"
+        },
+        "com.judax.cordova.plugin.gamepad": {
+            "PACKAGE_NAME": "com.example.hello"
+        }
+    },
+    "dependent_plugins": {}
+}

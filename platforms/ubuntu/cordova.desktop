@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=HelloWorld
+Exec=./cordova-ubuntu www/
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
+Icon=qmlscene
